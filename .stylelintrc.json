@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "stylelint-config-recommended-scss"
+    ],
+    "rules": {
+        "no-descending-specificity": true,
+        "block-no-empty": true,
+        "no-empty-source": true,
+        "color-no-invalid-hex": true,
+        "declaration-no-important": null
+    }
+}

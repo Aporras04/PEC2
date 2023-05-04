@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/main.scss">
+    <script type="module" src="../assets/scripts/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <div>
+        <img style="width:100px;" src="../assets/images/logo.png" alt="">
+    </div>
+    <div class="menu">
+        <ul class="lista-menu">
+            <li><a class="m-link" href="./page_two.html">Page Two</a></li>
+            <li><a class="m-link" href="./page_three.html">Page Three</a></li>
+            <li><a class="m-link" href="./page_four.html">Page Four</a></li>
+        </ul>
+    </div>
+    <div id="mobile-menu" style="display: none;">
+        <ul class="nav nav-pills">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../index.html">Front Page</a></li>
+                <li><a class="dropdown-item" href="./page_two.html">Page Two</a></li>
+                <li><a class="dropdown-item" href="./page_three.html">Page Three</a></li>
+                <li><a class="dropdown-item" href="./page_four.html">Page Four</a></li>
+              </ul>
+            </li>
+          </ul>
+    </div>
+</header>
+
+    <h5 id="titulo" style="margin-top: 2rem;" class="text-center">Quieres más información?</h5>
+    <div style="width: 80%; margin-right: auto; margin-left: auto; display: flex; height: 70vh; justify-content: center; margin-top: 2rem;">
+        
+        <form id="formulario" class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+              <label for="validationCustom01" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Ingresa tu nombre" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustom02" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="validationCustom02" placeholder="Ingresa tu apellido" required>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationCustomUsername" class="form-label">Correo electronico</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" placeholder="Ingresa tu correo electrónico" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="validationCustom03" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="validationCustom03" required>
+              <div class="invalid-feedback">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom04" class="form-label">Provincia</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Selecciona...</option>
+                <option>Pichincha</option>
+                <option>Azuay</option>
+                <option>Bolivar</option>
+                <option>Cotopaxi</option>
+                <option>Galápagos</option>
+                <option>Manabí</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="validationCustom05" class="form-label">Código Postal</label>
+              <input type="text" class="form-control" id="validationCustom05" required>
+              <div class="invalid-feedback">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+
+          <div id="succes-form" style="display: none;">
+            <h1 class="text-center">Gracias por tu información</h1>
+            <h1 class="text-center">Nos pondremos en contacto contigo por correo electronico</h1>
+            <div style="width: 100%; display: flex; justify-content: center;">
+                <i style="font-size: 20rem;" class="fa-solid fa-envelope-circle-check"></i>
+            </div>
+          </div>
+    </div>
+
+    <footer>
+      <div class="logo">
+          <img style="width:100px;" src="../assets/images/logo.png" alt="">
+      </div>
+      <div id="foot-menu" class="d-flex align-center">
+          <ul class="footer-menu">
+              <li><a class="link" href="../index.html">Front Page</a></li>
+              <li><a class="link" href="./page_two.html">Page Two</a></li>
+              <li><a class="link" href="./page_three.html">Page Three</a></li>
+              <li><a class="link" href="./page_four.html">Page Four</a></li>
+          </ul>
+      </div>
+      <div class="d-flex align-center">
+          <i class="fa-brands fa-google-plus-g"></i>
+          <i class="fa-brands fa-facebook-f" style="margin: 0 1rem"></i>
+          <i class="fa-brands fa-twitter"></i>
+      </div>
+  </footer>
+    
+</body>
+</html>
